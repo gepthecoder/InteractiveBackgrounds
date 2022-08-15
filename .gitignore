@@ -50,9 +50,10 @@ ExportedObj/
 *.VC.db
 *.meta
 *.info
-InteractiveBackgrounds/Temp/*
-InteractiveBackgrounds/Logs/*
-InteractiveBackgrounds/Library/*
+InteractiveBackgrounds/InteractiveBackgrounds/Temp/*
+InteractiveBackgrounds/InteractiveBackgrounds/Logs/*
+InteractiveBackgrounds/InteractiveBackgrounds/Library/*
+builds/*
 
 # Unity3D generated meta files
 *.pidb.meta
