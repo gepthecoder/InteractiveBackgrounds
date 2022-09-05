@@ -21,7 +21,7 @@ namespace Blobio
             Vector3 screenPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, m_Cam.WorldToScreenPoint(transform.position).z);
             Vector3 newWorldPosition = m_Cam.ScreenToWorldPoint(screenPosition);
 
-            transform.position = newWorldPosition;
+            m_Rigid.position = newWorldPosition;
         }
 
         private void OnMouseDown()
