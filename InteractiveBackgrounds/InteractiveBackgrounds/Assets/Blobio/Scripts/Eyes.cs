@@ -2,26 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Eyes : MonoBehaviour
+namespace Blobio
 {
-    [SerializeField] private float m_RotationSpeed;
-
-    private float m_EyeAngleX;
-    private float m_EyeAngleY;
-
-    public void Update()
+    public class Eyes : MonoBehaviour
     {
-        RotateEye();
-    }
+        [SerializeField] private float m_RotationSpeed;
 
-    private void RotateEye()
-    {
-        m_EyeAngleX += Input.GetAxis("Mouse X") * m_RotationSpeed * -Time.deltaTime;
-        m_EyeAngleX = Mathf.Clamp(m_EyeAngleX, -47, 47);
+        private float m_EyeAngleX;
+        private float m_EyeAngleY;
 
-        m_EyeAngleY += Input.GetAxis("Mouse Y") * m_RotationSpeed * -Time.deltaTime;
-        m_EyeAngleY = Mathf.Clamp(m_EyeAngleY, -23, 23);
+        public void Update()
+        {
+            RotateEye();
+        }
 
-        transform.localRotation = Quaternion.Euler(m_EyeAngleY, 0, m_EyeAngleX);
+        private void RotateEye()
+        {
+            m_EyeAngleX += Input.GetAxis("Mouse X") * m_RotationSpeed * -Time.deltaTime;
+            m_EyeAngleX = Mathf.Clamp(m_EyeAngleX, -47, 47);
+
+            m_EyeAngleY += Input.GetAxis("Mouse Y") * m_RotationSpeed * -Time.deltaTime;
+            m_EyeAngleY = Mathf.Clamp(m_EyeAngleY, -23, 23);
+
+            transform.localRotation = Quaternion.Euler(m_EyeAngleY, 0, m_EyeAngleX);
+        }
     }
 }
