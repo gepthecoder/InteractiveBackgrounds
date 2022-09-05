@@ -6,16 +6,8 @@ public class Eyes : MonoBehaviour
 {
     [SerializeField] private float m_RotationSpeed;
 
-    private Camera m_Cam;
-
     private float m_EyeAngleX;
     private float m_EyeAngleY;
-
-    private void Start()
-    {
-        m_Cam = Camera.main;
-    }
-
 
     public void Update()
     {
