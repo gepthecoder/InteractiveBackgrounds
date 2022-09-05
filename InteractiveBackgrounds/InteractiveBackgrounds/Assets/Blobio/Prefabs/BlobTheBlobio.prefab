@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 328330937078231735}
   - component: {fileID: 328330937078231736}
   - component: {fileID: 328330937078231734}
+  - component: {fileID: 668731511264949168}
   m_Layer: 0
   m_Name: BlobTheBlobio
   m_TagString: Untagged
@@ -934,6 +935,19 @@ Cloth:
   - {x: 0.6666667, y: 0.16666667, z: 0.16666667}
   - {x: 0.5, y: 0.5, z: 0}
   m_VirtualParticleIndices: 
+--- !u!114 &668731511264949168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328330937078231732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9bcbdc88caeb14e87d3c3530abfe2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Destinatation: {fileID: 0}
 --- !u!1 &618165053894675724
 GameObject:
   m_ObjectHideFlags: 0

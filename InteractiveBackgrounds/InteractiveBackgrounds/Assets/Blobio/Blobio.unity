@@ -217,7 +217,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &501205367
 GameObject:
@@ -310,7 +310,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1670579660
 GameObject:
@@ -323,6 +323,7 @@ GameObject:
   - component: {fileID: 1670579663}
   - component: {fileID: 1670579662}
   - component: {fileID: 1670579661}
+  - component: {fileID: 1670579664}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -395,63 +396,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 16.881, y: 180, z: -0.01}
---- !u!1001 &1934083249
-PrefabInstance:
+--- !u!114 &1670579664
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8472839317785917495, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_Name
-      value: MrBlobio
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.4372158
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.758
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.6966813
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9141817803939504781, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2b589399d263d7b41b5fb40268495ea2, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670579660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1001 &2524114481798531153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -462,6 +438,10 @@ PrefabInstance:
     - target: {fileID: 328330937078231732, guid: b0fb98d2c2c13944fa2a79f3ed52f411, type: 3}
       propertyPath: m_Name
       value: BlobTheBlobio
+      objectReference: {fileID: 0}
+    - target: {fileID: 668731511264949168, guid: b0fb98d2c2c13944fa2a79f3ed52f411, type: 3}
+      propertyPath: m_Destinatation
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1136498734874617870, guid: b0fb98d2c2c13944fa2a79f3ed52f411, type: 3}
       propertyPath: m_RootOrder
