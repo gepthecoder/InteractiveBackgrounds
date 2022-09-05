@@ -8,6 +8,9 @@ namespace Blobio
     {
         [SerializeField] private EdgeCollider2D m_Edge;
 
+        [SerializeField] private GameObject m_ColliderLeft;
+        [SerializeField] private GameObject m_ColliderRight;
+
         private Camera m_Cam;
 
         private float m_Width;
@@ -18,7 +21,7 @@ namespace Blobio
             m_Cam = Camera.main;
         }
 
-        private void Update()
+        private void Start()
         {
             FindBounderies();
             SetBounds();
@@ -28,7 +31,9 @@ namespace Blobio
         {
             Vector2 pointA = new Vector2(m_Width / 2, m_Height / 2);
             Vector2 pointB = new Vector2(m_Width / 2, -m_Height / 2);
+            m_ColliderLeft.transform.position = new Vector3(pointB.x, m_ColliderLeft.transform.position.y, pointB.y);
             Vector2 pointC = new Vector2(-m_Width / 2, -m_Height / 2);
+            m_ColliderRight.transform.position = new Vector3(pointC.x, m_ColliderRight.transform.position.y, pointC.y);
             Vector2 pointD = new Vector2(-m_Width / 2, m_Height / 2);
 
             Vector2[] tempPoints = new Vector2[] { pointA, pointB, pointC, pointD, pointA };
